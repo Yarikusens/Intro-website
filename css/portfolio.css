@@ -1,0 +1,58 @@
+@import url('variables.css');
+body{
+    display: flex;
+    align-items: stretch;
+}
+#projects{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "a"
+    "b"
+    "c"
+    "d"
+    "e";
+}
+@media(width > 1024px){
+    #projects{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "a a b b c c"
+    "d d d e e e";
+    min-height: 80dvh;
+}}
+#projects > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#one{
+    grid-area: a;
+}
+#two{
+    grid-area: b;
+}
+#three{
+    grid-area: c;
+}
+#four{
+    grid-area: d;
+}
+#five{
+    grid-area: e;
+}
+p{
+    text-align: center;
+}
+.video{
+    width: 70%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 12px;
+    z-index: -1;
+    box-shadow: 0px 0px 50px 50px rgba(1, 147, 177, 0.233);
+}

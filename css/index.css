@@ -1,0 +1,30 @@
+@import url('variables.css');
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+img{
+    width: 50vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 25px rgba(0, 217, 255, 0.233);
+}
+@media(width > 720px){
+    img{
+    width: 40vw;
+    border-radius: 17.5px;
+    box-shadow: 0px 0px 37.5px 37.5px rgba(0, 217, 255, 0.233);
+    }
+}
+@media(width > 1024px){
+    img{
+    width: 20vw;
+    border-radius: 25px;
+    box-shadow: 0px 0px 50px 50px rgba(0, 217, 255, 0.233);
+    }
+}
+a{
+    color: var(--regular-link);
+}

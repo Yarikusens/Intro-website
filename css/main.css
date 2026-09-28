@@ -1,0 +1,80 @@
+@import url('variables.css');
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body{
+    font-family: Inter, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--regular-white);
+    font-weight: 500;
+    
+    background: 
+        radial-gradient(circle at center, rgb(21, 2, 73) 0%, rgba(255,255,255,0) 50%),
+        linear-gradient(to right, #2931a2 0%, #13146d 50%, #515dd4 100%);
+    background-attachment: fixed;
+    min-height: 100dvh;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav a{
+    color: var(--regular-white);
+    padding: clamp(0.375rem, 1.5vw, 1rem) clamp(0.75rem, 3vw, 1.7rem);;
+}
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    display: inline-block;
+}
+nav a.current {
+    display: inline-block;
+    background-color: var(--selection-color);
+    border-radius: 6px;
+}
+nav a:hover {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: var(--selection-color);
+    transform: translateY(-2px);
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+a{
+    text-decoration: none;
+}
+main * a{
+    color: var(--regular-link);
+}
+main * a:hover{
+    color: var(--regular-active-link);
+}
+h2{
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+p{
+    font-weight: 490;
+    font-size: 1rem;
+}
+@media(width > 720px){
+    h2{
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+    }
+    p{
+        font-size: 1.3rem;
+    }
+}
+@media(width > 1024px){
+    h2{
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+    }
+    p{
+        font-size: 1.2rem;
+    }
+}

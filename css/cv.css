@@ -1,0 +1,61 @@
+@import url('variables.css');
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+p{
+    margin-top: -10px;
+}
+h3{
+    margin-top: 15px;
+}
+h3, p{
+    align-self: start;
+    padding-left: 7.5vw
+}
+h3{
+    font-size: clamp(0.9rem, 2.25vw, 1.35rem);
+}
+th, td{
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+#langs * th{
+    font-weight: 500;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    text-align: center;
+    vertical-align: middle;
+}
+#langs * td{
+    font-weight: 420;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+    text-align: center;
+    vertical-align: middle;
+}
+#it-skills * th{
+    font-weight: 500;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+}
+#it-skills * td{
+    font-weight: 420;
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
+}
+#cv-button{
+    display: inline-block;
+    background-color: var(--selection-color);
+    padding: clamp(0.375rem, 1.5vw, 1rem) clamp(0.75rem, 3vw, 1.7rem);;
+    border-radius: 6px;
+}
+#cv-button:hover {
+    display: inline-block;
+    transform: translateY(-2px);
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+#cv-button > a{
+    color: var(--regular-white);
+}
