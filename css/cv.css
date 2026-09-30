@@ -4,7 +4,17 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 90%;
+}
+@media(width > 720px){
+    main{
+    width: 82.5%;
+    }
+}
+@media(width > 1024px){
+    main{
     width: 70%;
+    }
 }
 p{
     margin-top: -10px;
