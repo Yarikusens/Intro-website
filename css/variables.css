@@ -1,6 +1,12 @@
 :root{
-    --selection-color: #0f0963;
+    --selection-color: #091e63;
     --regular-white: #f2f2f8;
     --regular-link: #7876ff;
     --regular-active-link: #3432b9;
+    --bg-color: radial-gradient(circle at center, rgb(21, 2, 73) 0%, rgba(255,255,255,0) 50%),
+        linear-gradient(to right, #121649 0%, #13146d 50%, #4048a3 100%);
+    --blob1-color: rgba(86, 4, 180, 0.7);
+    --blob2-color: rgba(6, 77, 95, 0.7);
+    --blob3-color: rgba(85, 6, 138, 0.7);
+    --blob4-color: rgba(7, 114, 87, 0.7);
 }

@@ -22,7 +22,7 @@ body{
     grid-template-areas: 
     "a a b b c c"
     "d d d e e e";
-    min-height: 80dvh;
+    height: 0;
 }}
 #projects > div{
     display: flex;
@@ -53,12 +53,23 @@ p{
     aspect-ratio: 16 / 9;
     border: 0;
     border-radius: 12px;
-    box-shadow: 0px 0px 50px 50px rgba(1, 147, 177, 0.233);
+    box-shadow: 0px 0px 25px 25px rgba(1, 148, 177, 0.123);
 }
-.video{
+@media(width > 720px){
+    .video{
     width: 70%;
     aspect-ratio: 16 / 9;
     border: 0;
     border-radius: 12px;
-    box-shadow: 0px 0px 50px 50px rgba(1, 147, 177, 0.233);
+    box-shadow: 0px 0px 37.5px 37.5px rgba(1, 148, 177, 0.123);
+}
+}
+@media(width > 1024px){
+    .video{
+    width: 70%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0px 0px 50px 50px rgba(1, 148, 177, 0.123);
+}
 }

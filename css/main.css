@@ -8,9 +8,7 @@ body{
     color: var(--regular-white);
     font-weight: 500;
     
-    background: 
-        radial-gradient(circle at center, rgb(21, 2, 73) 0%, rgba(255,255,255,0) 50%),
-        linear-gradient(to right, #2931a2 0%, #13146d 50%, #515dd4 100%);
+    background: var(--bg-color);
     background-attachment: fixed;
     min-height: 100dvh;
     margin: 0;
@@ -18,6 +16,12 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+html {
+  scrollbar-width: none; /*For Firefox because of its engine Gecko*/
+}
+body::-webkit-scrollbar {
+  display: none; /*For old versions of Chrome, Safari, Edge, Opera*/
 }
 nav a{
     color: var(--regular-white);
