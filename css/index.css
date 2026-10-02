@@ -4,7 +4,9 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+}
+main > p{
+    max-width: 80%;
 }
 img{
     width: 50vw;
@@ -27,4 +29,9 @@ img{
 }
 a{
     color: var(--regular-link);
+}
+footer{
+    text-align: center;
+    line-height: 1;
+    margin-top: auto;
 }

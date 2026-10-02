@@ -1,8 +1,8 @@
 @import url('variables.css');
 .blob:nth-child(1){
-    top: 65%;
+    top: 65%; /* The (0,0) position on my website is kinda broken, so the values in top and left might look illogical, but they look exactly how I need */
     left: -20%;
-    --moving-delay-y: -3s;
+    --moving-delay-y: -3s; /* Delay means kinda starting point of animations (I could realise it wrongly). It's different in each blob to make their movement look more random */
     --moving-delay-x: -5s;
     --color: var(--blob1-color);
 }
@@ -34,12 +34,12 @@
 }
 .blobs {
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: -1;
     pointer-events: none;
 }
-.blob::after{
+.blob::after{ /* As far as I understood the video about such blobs, the pseudoelement ::after is used to divide different movement. Here I have two independent moving for X and Y. These cannot be applied to a single element, so we use its pseudoelement ::after */
     content: "";
     position: absolute;
     width: 100vw;
@@ -49,10 +49,10 @@
     filter: blur(4vw);
     animation: moving-y 4s var(--moving-delay-y) infinite ease-in-out alternate;
 }
-@media(width > 720px){
+@media(width >= 768px){
     .blob::after{ width: 70vw; }
 }
-@media(width > 1024px){
+@media(width >= 1024px){
     .blob:nth-child(1){ top: 45%; left: -15%; }
     .blob:nth-child(2){ top: 25%; left: 20%; }
     .blob:nth-child(3){ top: 5%; left: 45%; }
@@ -60,7 +60,7 @@
     .blob::after{ width: 40vw; }
 }
 @keyframes moving-y {
-    from{
+    from { /* "from" stands for 0% frame and "to" for 100% frame. To make animations more sophisticated you can use other values like 25% or 50% instead of keywords */
         transform:  translateY(-10%);
     }
     to {
@@ -68,8 +68,8 @@
     }
 }
 @keyframes moving-x {
-    from{
-        transform:  translate(-2vw);
+    from {
+        transform: translate(-2vw); /* Since my main element doesn't have a size, I refer to vw to determine movement */
     }
     to {
         transform: translateX(2vw);
