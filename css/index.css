@@ -13,14 +13,14 @@ img{
     border-radius: 10px;
     box-shadow: 0px 0px 25px 25px rgba(1, 155, 182, 0.164);
 }
-@media(width > 720px){
+@media(width >= 768px){
     img{
     width: 40vw;
     border-radius: 17.5px;
     box-shadow: 0px 0px 37.5px 37.5px rgba(1, 155, 182, 0.164);
     }
 }
-@media(width > 1024px){
+@media(width >= 1024px){
     img{
     width: 20vw;
     border-radius: 25px;
@@ -30,7 +30,7 @@ img{
 a{
     color: var(--regular-link);
 }
-footer{
+footer{ /* I didn't make footer on other pages on purpose */
     text-align: center;
     line-height: 1;
     margin-top: auto;

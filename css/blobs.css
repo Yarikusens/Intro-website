@@ -1,6 +1,6 @@
 @import url('variables.css');
 .blob:nth-child(1){
-    top: 65%; /* The (0,0) position on my website is kinda broken, so the values in top and left might look illogical, but they look exactly how I need */
+    top: 65%; /* The (0,0) position of .blobs is kinda broken, so the values in top and left might look illogical, but they look exactly how I need */
     left: -20%;
     --moving-delay-y: -3s; /* Delay means kinda starting point of animations (I could realise it wrongly). It's different in each blob to make their movement look more random */
     --moving-delay-x: -5s;
