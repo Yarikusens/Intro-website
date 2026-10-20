@@ -16,8 +16,11 @@ main{
     width: 70%;
     }
 }
-p{
+main * p{
     margin-top: -10px;
+}
+h2{
+    text-align: center;
 }
 h3{
     margin-top: 15px;
@@ -37,33 +40,33 @@ th{
 td{
     font-weight: 420;
 }
-#langs * th, #langs * td{
+.langs * th, .langs * td{
     text-align: center;
     vertical-align: middle;
     font-size: var(--fs-smaller-t);
 }
 @media(width >= 768px){
-    #langs * th, #langs * td{
+    .langs * th, .langs * td{
     font-size: var(--fs-p);
     }
 }
-#langs * td{
+.langs * td{
     text-align: center;
     vertical-align: middle;
 }
-#cv-button{
+.cv-button{
     display: inline-block;
     background-color: var(--selection-color);
     padding: 0.6em 1.2em;;
     border-radius: 6px;
 }
-#cv-button:hover {
+.cv-button:hover {
     display: inline-block;
     transform: translateY(-2px);
     transition:
         background-color 0.2s ease,
         transform 0.2s ease;
 }
-#cv-button > a{
+.cv-button > a{
     color: var(--regular-white);
 }

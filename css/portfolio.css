@@ -1,5 +1,5 @@
 @import url('variables.css');
-body{
+main{
     display: flex;
     align-items: stretch;
 }
@@ -72,8 +72,5 @@ p{
     .video{
         width: 25vw;
         box-shadow: 0px 0px 50px 50px rgba(1, 148, 177, 0.123);
-    }
-    nav{
-        margin-bottom: -40px; /* Just to make the page a little shorter, so that you cannot scroll it on a PC */
     }
 }

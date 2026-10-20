@@ -18,12 +18,17 @@ body{
     flex-direction: column;
     align-items: center;
 }
-html {
-  scrollbar-width: none; /* To remove scrollbar in Firefox because of its engine Gecko and most of modern browsers */
+/*html {
+  scrollbar-width: none;  I don't really like the scrollbar, and I want to believe that people don't need it to understand that the page is longer. But still, I leave it for others. 
+}*/
+nav{
+    margin-top: 5%;
 }
 nav a{
     color: var(--regular-white);
-    padding: 0.6em 1.2em;;
+    padding: 0.5em 1em;;
+    font-weight: 650;
+    font-size: var(--fs-h2);
 }
 nav ul{
     list-style-type: none;
