@@ -3,7 +3,7 @@ main{
     display: flex;
     align-items: stretch;
 }
-#projects{
+.projects{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(5, max-content);
@@ -15,40 +15,38 @@ main{
     "e";
 }
 @media(width >= 1024px){
-    #projects{
+    .projects{
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-    "a a b b c c"
-    "d d d e e e";
+    "a a a a b b b b c c c c"
+    ". d d d d d e e e e e .";
     height: 0;
-    #four{
-        margin-right: -15%;
     }
-    #five{
-        margin-left: -15%;
-    }
-}}
-#projects > div{
+}
+.projects > article{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-#one{
+.projects * h2{
+    line-height: 0.6;
+}
+.project-one{
     grid-area: a;
 }
-#two{
+.project-two{
     grid-area: b;
 }
-#three{
+.project-three{
     grid-area: c;
 }
-#four{
+.project-four{
     grid-area: d;
 }
-#five{
+.project-five{
     grid-area: e;
 }
 p{

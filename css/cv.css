@@ -59,6 +59,9 @@ td{
     background-color: var(--selection-color);
     padding: 0.6em 1.2em;;
     border-radius: 6px;
+    color: var(--regular-white);
+    font-size: var(--fs-h2);
+    margin-bottom: 1rem;
 }
 .cv-button:hover {
     display: inline-block;
@@ -66,7 +69,4 @@ td{
     transition:
         background-color 0.2s ease,
         transform 0.2s ease;
-}
-.cv-button > a{
-    color: var(--regular-white);
 }
